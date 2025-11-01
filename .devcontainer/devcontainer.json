@@ -1,7 +1,13 @@
 {
   "name": "Python 3 + uv",
   "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
-  
+  "features": {
+    // ⭐️ ここにgit-lfs featureを追加
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest",
+      "lfs": "true" // Git LFSをインストールする設定
+    }
+  },
   // 拡張機能 (必要に応じて)
   "customizations": {
     "vscode": {
